@@ -1,0 +1,105 @@
+h1
+{
+	text-align: center;
+	padding-top: 50px;
+	margin-bottom: 50px;
+	font-weight: bold
+}
+
+h2
+{
+	text-align: center;
+	font-size: 30px;
+	padding-top: 20px;
+	color: red;
+}
+
+.header_image
+{
+	background: url("image/header_image.jpg");
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	height: 200px;
+	background-position: center;
+}
+
+.menu
+{
+	display:flex;
+	height: 60px;
+	background-color: #734a12;
+	padding-left: 5%; /*Внутренний отступ*/
+	padding-right: 5%;
+	margin: 0px; /*Внешний отступ*/
+}
+
+.menu li
+{
+	width:100%;
+	list-style:none;
+	background:#734a12;
+	position:relative;
+	
+}
+
+.menu a
+{
+	color: white; /* Цвет обычной ссылки */
+	font-size: 20px;
+	display:block;
+	text-align:center;
+	line-height: 40px;/*Для цыравнивания по высоте*/
+	transition: all .5s;
+	text-decoration: none;
+}
+
+.menu a:hover
+{
+	background: #808291;
+}
+/*Для заголовков меню*/
+.menu ul
+{
+	position:absolute;
+	display:none;
+	padding: 0;
+	/.width: 271px;
+}
+
+.menu li:hover ul
+{
+	display:block;
+}
+
+/*Для заголовков меню*/
+.headMenu
+{
+	font-size: 24px;
+	padding-top:10px;
+	height: 50px;
+}
+
+main p
+{
+	margin-right: 15%;
+	margin-bottom: 0px;
+	font-size: 25px;
+	font-family: cambria;
+}
+
+main img
+{
+	margin-right: 30px;
+	margin-left: 10%;
+}
+
+.recept
+{
+	padding-left: 20%;
+	padding-right: 20%;
+	margin: 0px;
+	font-size: 20px;
+	line-height: 35px;	
+}
+
