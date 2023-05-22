@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html style = "background-color: #fcd975">
+	<head>
+		<link rel = "stylesheet" href = "styleButton.css">
+		<script> 
+			document.querySelector('.singkapvo-gesionalem').onmousemove = function (e) { 
+			var x = e.pageX - e.target.offsetLeft; 
+			var y = e.pageY - e.target.offsetTop; 
+			e.target.style.setProperty('--x', x + 'px'); 
+			e.target.style.setProperty('--y', y + 'px'); 
+			}; 
+		</script>
+	</head>
+	<form action="checkForm.html">
+  <h2 style = "text-align: center; font-size: 50px; font-family: cursive">Форма заказа</h2>
+  <fieldset style = "border-style: none">
+    <legend style = "font-family: calibri; font-size: 30px">Персональные данные</legend>
+    <ul style = "list-style-type: none">
+      <li style = "margin-bottom: 20px">
+        <label for="name" style = "font-family: comic sans ms">Имя:*</label>
+        <input type="text" name="name" placeholder="Иван Иванов" id="name" required style = "margin-left: 5%">
+      </li>
+      <li>
+        <label for="age" style = "font-family: comic sans ms">Возраст:</label>
+        <input type="number" name="age" placeholder="27" id="age" min="0" max="125" style = "margin-left: 3.7%">
+      </li>
+    </ul>
+  </fieldset>
+  <fieldset style = "margin-top: 10px; border-style: none">
+    <legend style = "font-family: calibri; font-size: 30px">Контакты</legend>
+    <ul style = "list-style-type: none">
+      <li>
+        <label for="email" style = "font-family: comic sans ms">E-mail:*</label>
+        <input type="email" name="mail" placeholder="ivanov@gmail.com" id="email" required style = "margin-left: 7%;">
+      </li>
+      <li style = "margin: 20px 0px">
+        <label for="number" style = "font-family: comic sans ms">Телефон:*</label>
+        <input type="tel" name="phone" placeholder="+7 000 000-00-00" id="number" maxlength="21" required style = "margin-left: 5.3%">
+      </li>
+	  <li>
+		<label for = "adress" style = "font-family: comic sans ms">Адрес доставки:*</label>
+		<input tyle="adr" name = "Adress" placeholder = "г. Брянск, ул. Бежицкая, д. 14" maxlength = "40" required style = "margin-left: 1.8%">
+    </ul>
+  </fieldset>
+  <fieldset style = "margin-top: 10px; border-style: none">
+    <legend style = "font-family: calibri; font-size: 30px">Способ доставки</legend>
+    <ul style = "list-style-type: none">
+      <li>
+        <input type="radio" name="Courier" id="Courier" checked>
+        <label for="Courier" style = "font-family: comic sans ms">Доставка курьером</label>
+      </li>
+      <li>
+        <input type="radio" name="Self" id="Self">
+        <label for="Self" style = "font-family: comic sans ms">Сами заберём заказ</label>
+      </li>
+      <li>
+        <input type="radio" name="Inside" id="Inside">
+        <label for="Self" style = "font-family: comic sans ms">Будем есть в заведении</label>
+      </li>
+    </ul>
+  </fieldset>
+  <fieldset style = "margin-top: 10px; border-style: none">
+    <legend style = "font-family: calibri; font-size: 30px">Предпочтения</legend>
+    <ul style = "list-style-type: none">
+      <li>
+        <input type="checkbox" name="preference" id="osnovB" value="osnovB">
+        <label for="osnovB" style = "font-family: comic sans ms">Основные блюда</label>
+      </li>
+      <li>
+        <input type="checkbox" name="preference" id="soup" value="soup">
+        <label for="soup" style = "font-family: comic sans ms">Супы</label>
+      </li>
+	  <li>
+		<input type = "checkbox" name = "preference" id = "salads" value = "salads">
+		<label for = "salads" style = "font-family: comic sans ms">Салаты</label>
+	  </li>
+	  <li>
+		<input type = "checkbox" name = "preference" id = "onCoals" value = "onCoals">
+		<label for = "onCoals" style = "font-family: comic sans ms">На углях</label>
+	  </li>
+	  <li>
+		<input type = "checkbox" name = "preference" id = "bakeryP" value = "bakeryP">
+		<label for = "bakeryP" style = "font-family: comic sans ms">Выпечка</label>
+	  </li>
+    </ul>
+  </fieldset>
+  <div style = "margin-top: 20px;">
+    <!--<button type="submit" style = "width: 150px; height: 50px; margin-left: 20px; font-family: calibri; font-size: 30px">Отправить</button>
+	<input type = "submit" name = "Massage" value = "Completed">-->
+	<button class="singkapvo-gesionalem"> 
+		<span>Заказать</span> 
+	</button>
+    <p style = "font-family: comic sans ms">* — Обязательные поля</p>
+  </div>
+  <img src = "image/osnovBludo2.png" style = "position: absolute; left: 65%; top: 15%; width: 500px; height: 400px">
+  <img src = "image/salads1.png" style = "position: absolute; left: 30%; top: 25%; width: 500px; height: 350px">
+  <img src = "image/soup2.png" style = "position: absolute; left: 35%; top: 70%; width: 500px; height: 350px">
+  <img src = "image/bakeryProducts3.png" style ="position: absolute; left: 60.5%; top: 73%; width: 600px; height: 450px">
+</form>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	</head>
+	<body>
+		<!--<form>
+			<label>Имя: </label>
+			<input type="text" id="name">
+			<label>Возраст: </label>
+			<input type="number" id="age">
+		</form>-->
+		<script>
+			var data = location.search.substring(1).split('&');
+    while(d = data.shift()) { 
+        d = d.split('=');
+        <!--alert('\nKey: ' + d[0] + ', Value: ' + d[1])-->
+		document.writeln('Key: ' + d[0] + ', Value: ' + d[1])
+    }
+		</script>
+	</body>
+</html>
